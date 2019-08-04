@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8589BCA0-72EB-4CC6-9355-572AF261ABAB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecondaryPersonalPages</RootNamespace>
+    <AssemblyName>SecondaryPersonalPages</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Legal Template\images\aaronmcnutt.jpg" />
+    <Content Include="Legal Template\images\Dane.jpg" />
+    <Content Include="Legal Template\images\dawsonhiggins.jpg" />
+    <Content Include="Legal Template\images\2001-gif-superJumbo-v5.gif" />
+    <Content Include="Legal Template\images\alyshawilliams.jpg" />
+    <Content Include="Legal Template\images\andrewsercer.jpg" />
+    <Content Include="Legal Template\images\badlands3.jpg" />
+    <Content Include="Legal Template\images\fog sioux falls.jpg" />
+    <Content Include="Legal Template\images\Jackalope II.jpg" />
+    <Content Include="Legal Template\images\johnathanberry.jpg" />
+    <Content Include="Legal Template\images\juanrangel.jpg" />
+    <Content Include="Legal Template\images\me.jpg" />
+    <Content Include="Legal Template\images\minnesoooooooooooooota.jpg" />
+    <Content Include="Legal Template\images\Resized oops.jpg" />
+    <Content Include="Legal Template\images\spearfish fall.jpg" />
+    <Content Include="Legal Template\images\stevehackathorn.jpg" />
+    <Content Include="Legal Template\images\takeshiAvatar.jpg" />
+    <Content Include="Legal Template\images\timvanderheiden.jpg" />
+    <Content Include="Legal Template\images\tjboone.jpg" />
+    <Content Include="Legal Template\images\Tower.jpg" />
+    <Content Include="Legal Template\js\jQueryLabs.js" />
+    <Content Include="packages.config" />
+    <Content Include="Legal Template\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\blue.scssc" />
+    <Content Include="Legal Template\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\bootstrap.scssc" />
+    <Content Include="Legal Template\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\style.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\blue.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\bootstrap.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style2.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style3.scssc" />
+    <Content Include="Legal Template\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style4.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_alerts.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_badges.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_breadcrumbs.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_button-groups.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_buttons.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_carousel.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_close.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_code.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_component-animations.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_dropdowns.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_forms.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_glyphicons.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_grid.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_input-groups.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_jumbotron.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_labels.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_list-group.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_media.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_mixins.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_modals.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_navbar.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_navs.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_normalize.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_pager.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_pagination.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_panels.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_popovers.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_print.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_progress-bars.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_responsive-embed.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_responsive-utilities.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_scaffolding.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_tables.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_thumbnails.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_tooltip.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_type.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_utilities.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_variables.scssc" />
+    <Content Include="Legal Template\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_wells.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_alerts.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_badges.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_breadcrumbs.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_button-groups.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_buttons.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_carousel.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_close.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_code.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_component-animations.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_dropdowns.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_forms.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_glyphicons.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_grid.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_input-groups.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_jumbotron.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_labels.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_list-group.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_media.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_mixins.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_modals.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_navbar.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_navs.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_normalize.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_pager.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_pagination.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_panels.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_popovers.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_print.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_progress-bars.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_responsive-embed.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_responsive-utilities.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_scaffolding.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_tables.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_thumbnails.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_tooltip.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_type.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_utilities.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_variables.scssc" />
+    <Content Include="Legal Template\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_wells.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_alerts.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_background-variant.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_border-radius.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_buttons.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_center-block.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_clearfix.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_forms.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_gradients.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_grid-framework.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_grid.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_hide-text.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_image.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_labels.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_list-group.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_nav-divider.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_nav-vertical-align.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_opacity.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_pagination.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_panels.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_progress-bar.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_reset-filter.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_reset-text.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_resize.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_responsive-visibility.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_size.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_tab-focus.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_table-row.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_text-emphasis.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_text-overflow.scssc" />
+    <Content Include="Legal Template\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_vendor-prefixes.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_alerts.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_background-variant.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_border-radius.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_buttons.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_center-block.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_clearfix.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_forms.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_gradients.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_grid-framework.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_grid.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_hide-text.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_image.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_labels.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_list-group.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_nav-divider.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_nav-vertical-align.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_opacity.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_pagination.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_panels.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_progress-bar.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_reset-filter.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_reset-text.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_resize.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_responsive-visibility.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_size.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_tab-focus.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_table-row.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_text-emphasis.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_text-overflow.scssc" />
+    <Content Include="Legal Template\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_vendor-prefixes.scssc" />
+    <Content Include="Legal Template\css\.DS_Store" />
+    <Content Include="Legal Template\css\bootstrap.css.map" />
+    <Content Include="Legal Template\css\style.css.map" />
+    <Content Include="Legal Template\fonts\.DS_Store" />
+    <Content Include="Legal Template\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Legal Template\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Legal Template\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="Legal Template\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="Legal Template\fonts\icomoon\.DS_Store" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon.eot" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon.ttf" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon.woff" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\.DS_Store" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\fonts\icomoon.eot" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\fonts\icomoon.woff" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\selection.json" />
+    <Content Include="Legal Template\fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="Legal Template\fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="Legal Template\fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="Legal Template\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="Legal Template\images\.DS_Store" />
+    <Content Include="Legal Template\js\.DS_Store" />
+    <Content Include="Legal Template\sass\.DS_Store" />
+    <Content Include="Legal Template\sass\bootstrap.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Legal Template\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_alerts.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_badges.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_button-groups.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_buttons.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_carousel.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_close.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_code.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_component-animations.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_forms.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_grid.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_input-groups.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_labels.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_list-group.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_media.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_mixins.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_modals.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_navbar.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_navs.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_normalize.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_pager.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_pagination.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_panels.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_popovers.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_print.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_tables.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_theme.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_tooltip.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_type.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_utilities.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_variables.scss" />
+    <Content Include="Legal Template\sass\bootstrap\_wells.scss" />
+    <Content Include="Legal Template\sass\style.scss" />
+    <Content Include="Legal Template\sass\_bootstrap-compass.scss" />
+    <Content Include="Legal Template\sass\_bootstrap-mincer.scss" />
+    <Content Include="Legal Template\sass\_bootstrap-sprockets.scss" />
+    <Content Include="_archiveLegal\indexOriginal.html" />
+    <Content Include="_archiveResumePage\.DS_Store" />
+    <Content Include="_archiveResumePage\css\.DS_Store" />
+    <Content Include="_archiveResumePage\css\animate.css" />
+    <Content Include="_archiveResumePage\css\blue.css" />
+    <Content Include="_archiveResumePage\css\blue.css.map" />
+    <Content Include="_archiveResumePage\css\bootstrap.css" />
+    <Content Include="_archiveResumePage\css\bootstrap.css.map" />
+    <Content Include="_archiveResumePage\css\icomoon.css" />
+    <Content Include="_archiveResumePage\css\style.css" />
+    <Content Include="_archiveResumePage\css\style.css.map" />
+    <Content Include="_archiveResumePage\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="_archiveResumePage\fonts\icomoon\icomoon.svg" />
+    <Content Include="_archiveResumePage\images\.DS_Store" />
+    <Content Include="_archiveResumePage\images\bg_img.jpg" />
+    <Content Include="_archiveResumePage\images\cropped me.jpg" />
+    <Content Include="_archiveResumePage\images\profile_img.png" />
+    <Content Include="_archiveResumePage\images\spearfish scenic 1.jpg" />
+    <Content Include="_archiveResumePage\index.html" />
+    <Content Include="_archiveResumePage\js\bootstrap.min.js" />
+    <Content Include="_archiveResumePage\js\jquery.easing.1.3.js" />
+    <Content Include="_archiveResumePage\js\jquery.easypiechart.min.js" />
+    <Content Include="_archiveResumePage\js\jquery.magnific-popup.min.js" />
+    <Content Include="_archiveResumePage\js\jquery.min.js" />
+    <Content Include="_archiveResumePage\js\jquery.waypoints.min.js" />
+    <Content Include="_archiveResumePage\js\main.js" />
+    <Content Include="_archiveResumePage\js\modernizr-2.6.2.min.js" />
+    <Content Include="_archiveResumePage\js\respond.min.js" />
+    <Content Include="_archiveResumePage\README.txt" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="_archiveLegal\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\blue.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\bootstrap.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\12e4d7a6407505736b12413dd14408c2ef9115db\style.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\blue.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\bootstrap.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style2.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style3.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\1cbbd09f8bb131b4b058e9470e5d6f9b8899ecc7\style4.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_alerts.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_badges.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_breadcrumbs.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_button-groups.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_buttons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_carousel.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_close.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_code.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_component-animations.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_dropdowns.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_forms.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_glyphicons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_grid.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_input-groups.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_jumbotron.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_labels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_list-group.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_media.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_mixins.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_modals.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_navbar.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_navs.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_normalize.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_pager.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_pagination.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_panels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_popovers.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_print.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_progress-bars.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_responsive-embed.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_responsive-utilities.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_scaffolding.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_tables.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_thumbnails.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_tooltip.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_type.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_utilities.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_variables.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\59e5ea8d74084ab15361df245dd7fec10ec0972d\_wells.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_alerts.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_badges.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_breadcrumbs.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_button-groups.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_buttons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_carousel.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_close.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_code.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_component-animations.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_dropdowns.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_forms.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_glyphicons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_grid.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_input-groups.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_jumbotron.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_labels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_list-group.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_media.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_mixins.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_modals.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_navbar.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_navs.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_normalize.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_pager.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_pagination.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_panels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_popovers.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_print.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_progress-bars.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_responsive-embed.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_responsive-utilities.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_scaffolding.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_tables.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_thumbnails.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_tooltip.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_type.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_utilities.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_variables.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\77417a253632f89eb2d33a06b4c7e0bf3c9802fe\_wells.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_alerts.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_background-variant.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_border-radius.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_buttons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_center-block.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_clearfix.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_forms.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_gradients.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_grid-framework.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_grid.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_hide-text.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_image.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_labels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_list-group.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_nav-divider.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_nav-vertical-align.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_opacity.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_pagination.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_panels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_progress-bar.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_reset-filter.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_reset-text.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_resize.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_responsive-visibility.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_size.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_tab-focus.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_table-row.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_text-emphasis.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_text-overflow.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\cce7d781e9f7ee6f70d5a99e7a89f40016c15aa4\_vendor-prefixes.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_alerts.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_background-variant.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_border-radius.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_buttons.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_center-block.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_clearfix.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_forms.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_gradients.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_grid-framework.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_grid.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_hide-text.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_image.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_labels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_list-group.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_nav-divider.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_nav-vertical-align.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_opacity.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_pagination.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_panels.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_progress-bar.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_reset-filter.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_reset-text.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_resize.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_responsive-visibility.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_size.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_tab-focus.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_table-row.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_text-emphasis.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_text-overflow.scssc" />
+    <Content Include="_archiveLegal\.sass-cache\dcd2e4a3dc827efbfb37a1e62a42f46f5f08e3d1\_vendor-prefixes.scssc" />
+    <Content Include="_archiveLegal\css\.DS_Store" />
+    <Content Include="_archiveLegal\css\bootstrap.css.map" />
+    <Content Include="_archiveLegal\css\style.css.map" />
+    <Content Include="_archiveLegal\fonts\.DS_Store" />
+    <Content Include="_archiveLegal\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="_archiveLegal\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="_archiveLegal\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="_archiveLegal\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="_archiveLegal\fonts\icomoon\.DS_Store" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon.eot" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon.ttf" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon.woff" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\.DS_Store" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\fonts\icomoon.eot" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\fonts\icomoon.ttf" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\fonts\icomoon.woff" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\selection.json" />
+    <Content Include="_archiveLegal\fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="_archiveLegal\fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="_archiveLegal\fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="_archiveLegal\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="_archiveLegal\images\.DS_Store" />
+    <Content Include="_archiveLegal\js\.DS_Store" />
+    <Content Include="_archiveLegal\sass\.DS_Store" />
+    <Content Include="_archiveLegal\sass\bootstrap.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_alerts.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_badges.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_button-groups.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_buttons.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_carousel.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_close.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_code.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_component-animations.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_forms.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_grid.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_input-groups.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_labels.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_list-group.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_media.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_mixins.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_modals.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_navbar.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_navs.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_normalize.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_pager.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_pagination.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_panels.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_popovers.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_print.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_tables.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_theme.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_tooltip.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_type.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_utilities.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_variables.scss" />
+    <Content Include="_archiveLegal\sass\bootstrap\_wells.scss" />
+    <Content Include="_archiveLegal\sass\style.scss" />
+    <Content Include="_archiveLegal\sass\_bootstrap-compass.scss" />
+    <Content Include="_archiveLegal\sass\_bootstrap-mincer.scss" />
+    <Content Include="_archiveLegal\sass\_bootstrap-sprockets.scss" />
+    <Content Include="_archiveResumePage\fonts\.DS_Store" />
+    <Content Include="_archiveResumePage\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="_archiveResumePage\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="_archiveResumePage\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="_archiveResumePage\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="_archiveResumePage\fonts\icomoon\.DS_Store" />
+    <Content Include="_archiveResumePage\fonts\icomoon\icomoon.eot" />
+    <Content Include="_archiveResumePage\fonts\icomoon\icomoon.ttf" />
+    <Content Include="_archiveResumePage\fonts\icomoon\icomoon.woff" />
+    <Content Include="_archiveResumePage\js\.DS_Store" />
+    <Content Include="_archiveResumePage\sass\.DS_Store" />
+    <Content Include="_archiveResumePage\sass\blue.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_alerts.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_badges.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_button-groups.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_buttons.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_carousel.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_close.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_code.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_component-animations.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_forms.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_grid.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_input-groups.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_labels.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_list-group.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_media.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_mixins.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_modals.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_navbar.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_navs.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_normalize.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_pager.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_pagination.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_panels.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_popovers.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_print.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_tables.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_theme.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_tooltip.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_type.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_utilities.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_variables.scss" />
+    <Content Include="_archiveResumePage\sass\bootstrap\_wells.scss" />
+    <Content Include="_archiveResumePage\sass\style.scss" />
+    <Content Include="_archiveResumePage\sass\_bootstrap-compass.scss" />
+    <Content Include="_archiveResumePage\sass\_bootstrap-mincer.scss" />
+    <Content Include="_archiveResumePage\sass\_bootstrap-sprockets.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Legal Template\.DS_Store" />
+    <Content Include="Legal Template\css\animate.css" />
+    <Content Include="Legal Template\css\bootstrap.css" />
+    <Content Include="Legal Template\css\icomoon.css" />
+    <Content Include="Legal Template\css\owl.carousel.min.css" />
+    <Content Include="Legal Template\css\owl.theme.default.min.css" />
+    <Content Include="Legal Template\css\simple-line-icons.css" />
+    <Content Include="Legal Template\css\style.css" />
+    <Content Include="Legal Template\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon.svg" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\demo-files\demo.css" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\demo-files\demo.js" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\demo.html" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\fonts\icomoon.svg" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\Read Me.txt" />
+    <Content Include="Legal Template\fonts\icomoon\icomoon\style.css" />
+    <Content Include="Legal Template\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="Legal Template\images\full_image_3.jpg" />
+    <Content Include="Legal Template\images\img_1.jpg" />
+    <Content Include="Legal Template\images\img_2.jpg" />
+    <Content Include="Legal Template\images\img_3.jpg" />
+    <Content Include="Legal Template\images\loc.png" />
+    <Content Include="Legal Template\images\person2.jpg" />
+    <Content Include="Legal Template\images\person3.jpg" />
+    <Content Include="Legal Template\images\person4.jpg" />
+    <Content Include="Legal Template\index.html" />
+    <Content Include="Legal Template\js\bootstrap.min.js" />
+    <Content Include="Legal Template\js\google_map.js" />
+    <Content Include="Legal Template\js\jquery.easing.1.3.js" />
+    <Content Include="Legal Template\js\jquery.min.js" />
+    <Content Include="Legal Template\js\jquery.stellar.min.js" />
+    <Content Include="Legal Template\js\jquery.waypoints.min.js" />
+    <Content Include="Legal Template\js\main.js" />
+    <Content Include="Legal Template\js\modernizr-2.6.2.min.js" />
+    <Content Include="Legal Template\js\owl.carousel.min.js" />
+    <Content Include="Legal Template\js\respond.min.js" />
+    <Content Include="Legal Template\README.txt" />
+    <Content Include="Web.config" />
+    <Content Include="_archiveLegal\.DS_Store" />
+    <Content Include="_archiveLegal\css\animate.css" />
+    <Content Include="_archiveLegal\css\bootstrap.css" />
+    <Content Include="_archiveLegal\css\icomoon.css" />
+    <Content Include="_archiveLegal\css\owl.carousel.min.css" />
+    <Content Include="_archiveLegal\css\owl.theme.default.min.css" />
+    <Content Include="_archiveLegal\css\simple-line-icons.css" />
+    <Content Include="_archiveLegal\css\style.css" />
+    <Content Include="_archiveLegal\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon.svg" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\demo-files\demo.css" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\demo-files\demo.js" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\demo.html" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\fonts\icomoon.svg" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\Read Me.txt" />
+    <Content Include="_archiveLegal\fonts\icomoon\icomoon\style.css" />
+    <Content Include="_archiveLegal\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="_archiveLegal\images\full_image_3.jpg" />
+    <Content Include="_archiveLegal\images\img_1.jpg" />
+    <Content Include="_archiveLegal\images\img_2.jpg" />
+    <Content Include="_archiveLegal\images\img_3.jpg" />
+    <Content Include="_archiveLegal\images\loc.png" />
+    <Content Include="_archiveLegal\images\person2.jpg" />
+    <Content Include="_archiveLegal\images\person3.jpg" />
+    <Content Include="_archiveLegal\images\person4.jpg" />
+    <Content Include="_archiveLegal\index.html" />
+    <Content Include="_archiveLegal\js\bootstrap.min.js" />
+    <Content Include="_archiveLegal\js\google_map.js" />
+    <Content Include="_archiveLegal\js\jquery.easing.1.3.js" />
+    <Content Include="_archiveLegal\js\jquery.min.js" />
+    <Content Include="_archiveLegal\js\jquery.stellar.min.js" />
+    <Content Include="_archiveLegal\js\jquery.waypoints.min.js" />
+    <Content Include="_archiveLegal\js\main.js" />
+    <Content Include="_archiveLegal\js\modernizr-2.6.2.min.js" />
+    <Content Include="_archiveLegal\js\owl.carousel.min.js" />
+    <Content Include="_archiveLegal\js\respond.min.js" />
+    <Content Include="_archiveLegal\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58799</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58799/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
